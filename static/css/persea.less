@@ -1,0 +1,242 @@
+[unselectable=on] {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.navbar .nav > .disabled {
+  opacity: .25;
+}
+
+#project-title input {
+  font-size: 38.5px;
+  font-weight: bold;
+  height: 40px;
+  position: relative;
+  width: auto;
+  padding: 0px;
+  margin-top: 10px;
+  left: -1px;
+}
+
+#project-image-container {
+  position: relative;
+}
+
+#project-image {
+}
+
+#project-image-overlay {
+  display: none;
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  top: 0;
+  left: 0;
+  background-image: url('/app/node.js/persea/static/css/play.png');
+  opacity: .5;
+}
+
+.hero-unit {
+  position: relative;
+  color: #FFFFFF;
+  text-shadow: -1px 0 3px black;
+  background-image: url("http://placekitten.com/g/1170/284");
+}
+
+#project-list a.media {
+  display: block;
+}
+
+#project .navbar {
+  margin-bottom: 0px;
+}
+
+.statusbar {
+  margin-top: 20px;
+}
+
+#environment-list {
+  .thumb {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+#environment {
+  
+  .rooms {
+    select {
+      width: 100%;
+    }
+  }
+  
+  #environment-controls {
+    margin-bottom: 20px;
+  
+    .nav-tabs {
+      margin-bottom: 0px;
+    }
+  
+    .landscape {
+      
+      #environment-landscape-mode {
+        padding-right: 8px;
+      }
+      
+      #tileset {
+        box-shadow: 1px 1px 2px 0 black;
+        margin: 0 4px;
+        position: relative;
+        width: 256px;
+        height: 256px;
+        overflow: hidden;
+      
+        .image {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        
+        .selection {
+          background-image: url("/app/node.js/persea/static/img/tileset-bg.png");
+          position: absolute;
+        }
+      }
+      
+      .draw select {
+        width: 140px;
+      }
+      
+      .layers select {
+        width: 50px;
+      }
+      
+      .draw, .layers {
+        white-space: nowrap
+      }
+      
+      .draw, .layers, .draw > div, .layers > div {
+        display: inline;
+      }
+      
+      .draw label, .layers label {
+        display: inline;
+        margin-right: 5px;
+      }
+      
+      .draw .controls, .layers .controls {
+        display: inline;
+        position: relative;
+        top: 3px;
+      }
+      
+      .upon {
+        display: inline;
+        margin-right: 2px;
+        margin-left: -4px;
+      }
+    }
+  }
+  
+  .document-container {
+    
+    #environment-document-mode {
+      padding-right: 8px;
+    }
+    
+    #environment-document {
+      position: relative;
+      height: 100%;
+      box-shadow: 1px 1px 2px 0 black;
+      overflow: hidden;
+      
+      .layers {
+        position: relative;
+        
+        .layer {
+          position: absolute;
+          
+          canvas {
+            
+            &[solo] {
+              display: none;
+            }
+            
+            image-rendering: optimizeSpeed;
+            image-rendering: crisp-edges;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: optimize-contrast;
+            -ms-interpolation-mode: nearest-neighbor;
+          }
+        }
+      }
+      
+      .draw-overlay {
+        position: absolute;
+        overflow: hidden;
+        display: none;
+        
+        .image {
+          position: absolute;
+          
+          img {
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}
+
+#tileset-list {
+  .thumb {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+#tileset {
+  
+  .form-row {
+    margin-bottom: 20px;
+    
+    .wh {
+      /* width: 128px; */
+      /* float: left; */
+    }
+  }
+  
+  input.tileData {
+    margin-top: 20px;
+    color: transparent;
+    /* display: none; */
+  }
+  
+  .image-container {
+    position: relative;
+    
+    width: 256px;
+    height: 256px;
+    
+    overflow: hidden;
+    
+    .image {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    canvas {
+      position: relative;
+    }
+  }
+  
+  .upload-tileset {
+    margin-top: 20px;
+  }
+  
+}

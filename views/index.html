@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<link href="/css/bootstrap.css" rel="stylesheet" media="screen">
+		
+		<style>
+body {
+  padding-top: 60px;
+}
+
+		</style>
+		
+		<link href="/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+		
+		<link href="/css/persea.less" rel="stylesheet" media="screen">
+		
+	</head>
+	
+	<body>
+		
+		<!--
+			This is just developer UX so the DOM isn't gigantic within
+			DOM inspectors.
+		-->
+		<div id="scripts">
+		
+		<script type="text/javascript" src="/js/vendor/modernizr.js"></script>
+		
+		<script type="text/javascript" src="/js/vendor/underscore.js"></script>
+		
+		<script type="text/javascript" src="/js/vendor/jquery-1.8.2.js"></script>
+		<script type="text/javascript" src="/js/vendor/jquery-ui-1.9.2.custom.js"></script>
+		
+		<script type="text/javascript" src="/js/vendor/jquery.mobile.js"></script>
+		
+		<script type="text/javascript" src="/js/vendor/handlebars-1.0.rc.1.js"></script>
+		
+		<script type="text/javascript" src="/js/vendor/bootstrap.js"></script>
+		
+		<script type="text/javascript" src="/js/vendor/jquery.cookie.js"></script>
+		<script type="text/javascript" src="/js/vendor/jquery.hotkeys.js"></script>
+		<script type="text/javascript" src="/js/vendor/jquery.jstree.js"></script>
+		
+		<script type="text/javascript" src="/js/vendor/ember.js"></script>
+		<script type="text/javascript" src="/js/vendor/ember-data.js"></script>
+		<script type="text/javascript" src="/js/vendor/ember-bootstrap.js"></script>
+		
+		<script type="text/javascript" src="/js/vendor/jquerypp.custom.js"></script>
+		
+		<script src="/socket.io/socket.io.js"></script>
+		
+		<script type="text/javascript">
+			var requires_ = {};
+		</script>
+		
+		{{#moduleFiles}}
+		<script type="text/javascript" src="{{{src}}}"></script>
+		{{/moduleFiles}}
+		
+		<script type="text/javascript" src="/engine/main/web/Initialize.coffee"></script>
+		
+		<script type="text/javascript" src="/js/index.coffee"></script>
+		
+		</div>
+		
+	</body>
+</html>
